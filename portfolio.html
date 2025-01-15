@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4cf05f584e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.JPG" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+            </nav>
+                <div class="header-text">
+                    <p>Full-Stack Software Developer</p>
+                    <h2>Hello, I'm Roberto Araujo-Maldonado from Texas. Welcome to my portfolio!</h2>
+                </div>
+        </div>
+        <video autoplay loop muted playsinline style="width: 1500px; height: 1000px;">
+            <source src="helloWorld.mp4" type="video/mp4">
+        </video>        
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about-row">
+                <div class="about-col">
+                    <img src="me.jpg" alt="Roberto Araujo-Maldonado" width="300" height="340">
+                    <div class="about-col">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hello, my name is Roberto Araujo-Maldonado. My field of study is Software Engineering. 
+                            I started taking interest in programming in middle school (robotics). Later in high school, 
+                            I took an introductory course in Java, which challenged me further. After high school, I gave programming another chance in college. 
+                            During my freshman and sophomore years, I became familiar with Java, C++, C, and even assembly language. 
+                            Later, as a junior, I explored Databases, Python, and the combination of HTML, CSS, and JavaScript. 
+                            Despite challenges and failed courses, I find software engineering rewarding, and I am committed to learning and growing in this field.
+                        </p>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills, Experience, Education Tabs -->
+    <section id="details">
+        <div class="container">
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                    <li><span>Web Development</span><br>Developing web applications</li>
+                    <li><span>AI Implementation</span><br>Integrating AI into websites</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2024</span><br>Created a mini-game using Java with a database.</li>
+                    <li><span>2024</span><br>Built a team database project about a social media platform.</li>
+                    <li><span>2023</span><br>Team leader at a supermarket, driving higher revenues.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2023-Present</span><br>Pursuing a Software Engineering Bachelor's at the University of Texas at Dallas</li>
+                    <li><span>2023-2024</span><br>Completed Harvard CS50x Certificate</li>
+                    <li><span>2020-2023</span><br>Associate's in Mathematics</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Design</h2>
+                    <p>I specialize in creating efficient and reliable database systems. Whether designing schemas or optimizing performance, I aim to build secure, user-friendly databases that help businesses make smarter decisions.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I bring ideas to life through clean, responsive websites. From simple pages to dynamic sites, I focus on creating user-friendly web experiences using HTML, CSS, JavaScript, and more.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>AI Specialist</h2>
+                    <p>I integrate AI into projects, enhancing user experiences through automation and intelligent design. From AI models to real-world implementations, I enjoy exploring new possibilities in AI development.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- -----------------portfolio ------------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h2 class="sub-title">My Work</h2>
+        <div class="work-list">
+            <div class="work">
+                <img src="work1.png" width="200" height="300">
+                <div class="layer">
+                    <h3>Social Media App </h3>
+                    <p> The Website was mainly to connect and network with other talented people using a database for data storing</p>
+                    <a> href="#"</a>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work3.png" width="200" height="300">
+                <div class="layer">
+                    <h3>Mini-Game using python</h3>
+                    <p> The game was built using Java it's about tanks fighting each other, where the oponent is an AI tank.</p>
+                    <a> href="#"</a>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work2.png" width="200" height="300">
+                <div class="layer">
+                    <h3>AI implementation</h3>
+                    <p> AI app where AI was implemented to respond to active users...</p>
+                    <a> href="#"</a>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+        </div>
+        <a href="#" class = "btn"> See more</a>
+    </div>
+</div>
+
+<!-- ------------------contact ----------------------- -->
+<div id = "contact">
+    <div class = "container">
+        <div class = "row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> Roberto.araujomaldonado@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 214-317-8438</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/roberto-araujo-maldonado-75b736254/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/23betomaldonado"><i class="fa-brands fa-github"></i></a>
+                </div>    
+                <a href="resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right"></div>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="Submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="Hello"></span>
+        </div>
+    </div>
+</div>
+    <div class="copyright">
+    <p>Copyright © Roberto Araujo-Maldonado Industries</p>
+    </div>
+</div>
+
+
+    <!-- JavaScript -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbxXmaYSgoREDUnkqvzGYjm575aaSJBr_HNUBeQf1TECf0ocg9s0Jo88TjZ46ez1mQM_/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully!"
+setTimeout(function(){
+    msg.innerHTML = ""
+},5000)
+form.reset()
+}
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
